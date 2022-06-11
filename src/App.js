@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import Pic from "./img/pic.jpg";
+import Pic2 from "./img/Nespresso-Essenza-mini-03.jpg";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return (
+    <div>
+    <div  Style={{border:"solid 1px black", maxWidth: "100vw"  }}>
+       
+      <h1 className="title red">hisham</h1>
+      <br/>
+      <img src={Pic} alt="" width={250} height={250}  />
+
+      <br/>
+      <img src={Pic2} alt="" width={250} height={250}  />
+
+    </div>
+    <video width="750" height="500" controls >
+      <source src="https://www.youtube.com/watch?v=464GkuHGp-w" type="video/mp4"/>
+     </video>
+    </div>
+  );
 }
 
 export default App;
+
