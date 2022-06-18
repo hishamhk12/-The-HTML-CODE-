@@ -1,6 +1,4 @@
-import Pic from "./img/pic.jpg";
-import Pic2 from "./img/Nespresso-Essenza-mini-03.jpg";
-
+import Pic from "./img/Nespresso-Essenza-mini-03.jpg";
 function App() {
   return (
     <div>
@@ -11,13 +9,13 @@ function App() {
       <img src={Pic} alt="" width={250} height={250}  />
 
       <br/>
-      <img src={Pic2} alt="" width={250} height={250}  />
+      <img src={process.env.PUBLIC_URL+"/image/pic.jpg"} alt="" width={250} height={250}  />
 
     </div>
     <video width="750" height="500" controls >
       <source src="https://www.youtube.com/watch?v=464GkuHGp-w" type="video/mp4"/>
      </video>
-    </div>
+   </div>
   );
 }
 
